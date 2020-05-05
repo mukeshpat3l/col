@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="[QAGold - Stage] - SignUp Module" verbose="10" parallel="tests" thread-count="5">
+
+	<!-- Put IP of localhost/Grid Hub machine -->
+	<parameter name="selenium.host" value="localhost" />
+
+	<!-- Put Port of localhost RC/Grid Hub machine -->
+	<parameter name="selenium.port" value="4444" />
+
+	<!-- Put target browser name as below: 1) Firefox : firefox 2) chrome : chrome 3) IExplorer : ie8 / ie9 ; browserstack -->
+
+	<parameter name="selenium.browser" value="chrome" />
+	<parameter name="execution.env" value="remote" />      <!--  local = execute on localhost else on Remote url-->
+
+	
+	<listeners>
+        <listener class-name="com.utilities.CustomReporterEmailBuildSummary"/>
+        <listener class-name="com.utilities.CustomReporterforEmail"/>
+        <listener class-name="com.utilities.CustomReporterTestFailureDetails"/>
+        <listener class-name="com.utilities.CustomReporterListener"/>
+    </listeners>
+
+	 <test name=" TC_SU_01 :: [QA Gold] To verify 'SignUp' functionality for 'Learner user Above 13' age.">
+	 
+	 	<parameter name="test.url" value="https://qa-gold.cityoflearning.me" />   	<!-- url will be changed as per different instances -->
+		<parameter name="username" value="mukeshlearnergold1" />					<!-- username -->
+		<parameter name="password" value="Kiwi1234" />                              <!-- password -->
+		<parameter name="envName" value="qagold" />                              	<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signUp.SignUpIndex">
+				<methods>
+					<include name="signUp" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name=" TC_SU_01 :: [Chicago Stage] To verify 'SignUp' functionality for 'Learner user Above 13' age.">
+	 
+	 	<parameter name="test.url" value="https://staging.cityoflearning.org" />   	<!-- url will be changed as per different instances -->
+		<parameter name="username" value="migtest-300" />							<!-- username -->
+		<parameter name="password" value="test" />                             		<!-- password -->
+		<parameter name="envName" value="qagold" />                              	<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signUp.SignUpIndex">
+				<methods>
+					<include name="signUp" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name=" TC_SU_01 :: [Evanstone Stage] To verify 'SignUp' functionality for 'Learner user Above 13' age.">
+		
+		<parameter name="test.url" value="https://evanston.cityoflearning.me" />   	<!-- url will be changed as per different instances -->
+		<parameter name="username" value="migtest-300" />							<!-- username -->
+		<parameter name="password" value="test" />									<!-- password -->
+		<parameter name="envName" value="evanston" />                              	<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signUp.SignUpIndex">
+				<methods>
+					<include name="signUp" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name=" TC_SU_01 :: [Dallas Stage] To verify 'SignUp' functionality for 'Learner user Above 13' age.">
+		
+		<parameter name="test.url" value="https://dallas.cityoflearning.me" />   	<!-- url will be changed as per different instances -->
+ 		<parameter name="username" value="migtest-300" />							<!-- username -->
+ 		<parameter name="password" value="test" />									<!-- password -->
+ 		<parameter name="envName" value="dallas" />                              	<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signUp.SignUpIndex">
+				<methods>
+					<include name="signUp" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name=" TC_SU_01 :: [San Antonio Stage] To verify 'SignUp' functionality for 'Learner user Above 13' age.">
+		
+		<parameter name="test.url" value="https://san-antonio.cityoflearning.me" />   	<!-- url will be changed as per different instances -->
+		<parameter name="username" value="migtest-300" />								<!-- username -->
+		<parameter name="password" value="test" />										<!-- password -->
+		<parameter name="envName" value="san_antonio" />								<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signUp.SignUpIndex">
+				<methods>
+					<include name="signUp" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>

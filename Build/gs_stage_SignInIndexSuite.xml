@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="[QAGold - Stage] - SignIn - SignOut Module" verbose="10" parallel="tests" thread-count="5">
+
+	<!-- Put IP of localhost/Grid Hub machine -->
+	<parameter name="selenium.host" value="localhost" />
+
+	<!-- Put Port of localhost RC/Grid Hub machine -->
+	<parameter name="selenium.port" value="4444" />
+
+	<!-- Put target browser name as below: 1) Firefox : firefox 2) chrome : chrome 3) IExplorer : ie8 / ie9 ; browserstack -->
+
+	<parameter name="selenium.browser" value="chrome" />
+	<parameter name="execution.env" value="remote" />      <!--  local = execute on localhost else on Remote url-->
+
+	
+	<listeners>
+        <listener class-name="com.utilities.CustomReporterEmailBuildSummary"/>
+        <listener class-name="com.utilities.CustomReporterforEmail"/>
+        <listener class-name="com.utilities.CustomReporterTestFailureDetails"/>
+        <listener class-name="com.utilities.CustomReporterListener"/>
+    </listeners>
+
+	 <test name=" TC_SI_01 :: [QA Gold] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public User' .">
+	 
+	 	<parameter name="test.url" value="https://qa-gold.cityoflearning.me" />   	<!-- url will be changed as per different instances -->
+		<parameter name="username" value="mukeshlearnergold1" />					<!-- username -->
+		<parameter name="password" value="Kiwi1234" />                              <!-- password -->
+		<parameter name="envName" value="qagold" />                              	<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="signIn" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name=" TC_SI_01 :: [Chicago Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public' user.">
+	 
+	 	<parameter name="test.url" value="https://staging.cityoflearning.org" />   	<!-- url will be changed as per different instances -->
+		<parameter name="username" value="migtest-300" />							<!-- username -->
+		<parameter name="password" value="test" />                             		<!--  password -->
+		<parameter name="envName" value="qagold" />                              	<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="signIn" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name=" TC_SI_01 :: [Evanstone Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public' user.">
+		
+		<parameter name="test.url" value="https://evanston.cityoflearning.me" />   	<!-- url will be changed as per different instances -->
+		<parameter name="username" value="migtest-300" />							<!-- username -->
+		<parameter name="password" value="test" />									<!-- password -->
+		<parameter name="envName" value="evanston" />                              	<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="signIn" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name=" TC_SI_01 :: [Dallas Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public' user.">
+		
+		<parameter name="test.url" value="https://dallas.cityoflearning.me" />   	<!-- url will be changed as per different instances -->
+		<parameter name="username" value="migtest-300" />							<!-- username -->
+		<parameter name="password" value="test" />									<!-- password -->
+		<parameter name="envName" value="dallas" />                              	<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="signIn" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name=" TC_SI_01 :: [San Antonio Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public' user.">
+		
+		<parameter name="test.url" value="https://san-antonio.cityoflearning.me" />   	<!-- url will be changed as per different instances -->
+		<parameter name="username" value="migtest-300" />								<!-- username -->
+		<parameter name="password" value="test" />										<!-- password -->
+		<parameter name="envName" value="san_antonio" />
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="signIn" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	
+	<!-- Admin - Staging Env Login Logout -->
+	
+	
+	<test name=" TC_SI_02 :: [QA Gold] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Admin' user.">
+		
+		<parameter name="test.url" value="https://qa-gold.cityoflearning.me/admin" />   		<!-- url will be changed as per different instances -->
+		<parameter name="username" value="mukesh+super1@kiwiqa.com" />							<!-- username -->
+		<parameter name="password" value="Kiwi1234" />											<!-- password -->
+		<parameter name="envName" value="qagold" />
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="logInAdmin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name=" TC_SI_02 :: [Chicago Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Admin' user.">
+	 
+	 	<parameter name="test.url" value="https://staging.cityoflearning.org/admin" />   			<!-- url will be changed as per different instances -->
+		<parameter name="username" value="mukesh.patel@kiwiqa.com" />								<!-- username -->
+		<parameter name="password" value="Kiwi1234" />                             					<!--  password -->
+		<parameter name="envName" value="qagold" />                              					<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="logInAdmin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name=" TC_SI_02 :: [Evanstone Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Admin' user.">
+		
+		<parameter name="test.url" value="https://evanston.cityoflearning.me/admin" />   		<!-- url will be changed as per different instances -->
+		<parameter name="username" value="mukesh+super1@kiwiqa.com" />							<!-- username -->
+		<parameter name="password" value="Kiwi1234" />											<!-- password -->
+		<parameter name="envName" value="evanston" />                              				<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="logInAdmin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name=" TC_SI_02 :: [San Antonio Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Admin' user.">
+		
+		<parameter name="test.url" value="https://san-antonio.cityoflearning.me/admin" />   		<!-- url will be changed as per different instances -->
+		<parameter name="username" value="mukesh+super1@kiwiqa.com" />								<!-- username -->
+		<parameter name="password" value="Kiwi1234" />												<!-- password -->
+		<parameter name="envName" value="san_antonio" />
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="logInAdmin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name=" TC_SI_02 :: [Dallas Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Admin' user.">
+		
+		<parameter name="test.url" value="https://dallas.cityoflearning.me/admin" />   			<!-- url will be changed as per different instances -->
+		<parameter name="username" value="mukesh.patel@kiwiqa.com" />							<!-- username -->
+		<parameter name="password" value="Kiwi1234" />											<!-- password -->
+		<parameter name="envName" value="dallas" />                              				<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="logInAdmin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+</suite>

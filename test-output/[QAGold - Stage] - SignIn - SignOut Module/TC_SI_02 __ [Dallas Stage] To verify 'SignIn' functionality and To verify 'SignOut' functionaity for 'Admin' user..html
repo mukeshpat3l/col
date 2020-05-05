@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>TestNG:   TC_SI_02 :: [Dallas Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Admin' user.</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'> TC_SI_02 :: [Dallas Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Admin' user.</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 05 08:22:31 UTC 2020</td>
+</tr>
+<tr><td>Total time:</td><td>70 seconds (70895 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.signIn.SigninIndex.logInAdmin()'><b>logInAdmin</b><br>Test class: com.automation.signIn.SigninIndex<br/>
+<a href="#Output-970674499" onClick='toggleBox("Output-970674499", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-970674499" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-970674499">
+<strong> <h4 style="color:DarkViolet"> Test Case ID: TC_SignIn_02 </h4> </strong><br/>
+<strong> <h3 style="color:DeepPink"> Test Description:  TC_SI_02 :: [Dallas Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Admin' user. - [https://dallas.cityoflearning.me/admin]</h4> </strong><br/>
+<strong> <h4 style="color:DeepPink"> Testcase :  To verify Sign In Functionality.</h4> </strong><br/>
+<br></br>Step 1 : Open url: <a>https://dallas.cityoflearning.me/admin</a><br/>
+<br></br><b style="color:OrangeRed "> Expected Result-1: </b><b>To verify user redirects to Admin Login page and can see Login Form for - dallas Instance.</b><br/>
+<br></br><b> Dallas City of Learning's Org Dashboard </b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br>Step 2 : 'Login' with valid Credentials<br/>
+<br></br>Environment:  <b>https://dallas.cityoflearning.me/admin</b><br/>
+<br></br>Entered 'Email' :-<b>mukesh.patel@kiwiqa.com</b><br/>
+<br></br>Entered 'Password' :-<b>Kiwi1234</b><br/>
+<br></br>Clicked on 'LogIn' button.<br/>
+<br></br><b style="color:OrangeRed "> Expected Result-2: </b><b>To verify user should LogIn successfully and verify Admin username should be same as entered email.</b><br/>
+<br></br>Actual Admin Username after LogIn: <b>Mukesh SA</b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br><b style="color:OrangeRed "> Expected Result-3: </b><b>To verify user is redirected to 'Organizations and Programs' page</b><br/>
+<br></br>Actual URL after LogIn: https://dallas.cityoflearning.me/admin/super-admin<br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<strong> <h4 style="color:DarkViolet"> Test Case ID: TC_SignOut_02 </h4> </strong><br/>
+<strong> <h4 style="color:DeepPink"> Testcase :  To verify Sign Out Functionality.</h4> </strong><br/>
+<br></br>Step 3 : Log Out from current Login account.<br/>
+<br></br>Clicked on 'Log Out' option (From Header).<br/>
+<br></br><b style="color:OrangeRed "> Expected Result-4: </b><b>To verify user gets LogIn form for 'Email' and 'Password' after LogOut Successfully.</b><br/>
+<br></br><b> Dallas City of Learning's Org Dashboard </b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br><b style="color:OrangeRed "> Expected Result-5: </b><b>To verify after LogOut user cannot go back to Admin Dasboard page.</b><br/>
+<br></br>Directly Trying to Open URL: <b>https://dallas.cityoflearning.me/admin/super-admin</b><br/>
+<br></br><b> System Redirects User to :: <b>https://dallas.cityoflearning.me/admin/login?errors=You%20need%20to%20log%20in%20to%20access%20that%20page</b>- As User is already LogOut. </b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<hr size='4px' noshade color='green'><br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>com.automation.signIn.SigninIndex@4abdb505</td></tr>
+</table><p>
+</body>
+</html>

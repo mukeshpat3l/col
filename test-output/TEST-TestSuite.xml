@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="275.024" tests="15" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="JOB_NAME" value="automation_gs_instance"/>
+    <property name="PWD" value="/var/lib/jenkins"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="JENKINS_HOME" value="/var/lib/jenkins"/>
+    <property name="PATH" value="/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"/>
+    <property name="HUDSON_SERVER_COOKIE" value="399c0952e66125ec"/>
+    <property name="POM_ARTIFACTID" value="webApp"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="EXECUTOR_NUMBER" value="0"/>
+    <property name="surefire.suiteXmlFiles" value="Build\gs_stage_SignInIndexSuite.xml,Build\gs_stage_SignUpIndexSuite.xml"/>
+    <property name="XDG_DATA_DIRS" value="/usr/local/share:/usr/share:/var/lib/snapd/desktop"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="POM_DISPLAYNAME" value="webApp"/>
+    <property name="XDG_RUNTIME_DIR" value="/run/user/112"/>
+    <property name="NODE_LABELS" value="master"/>
+    <property name="java.runtime.version" value="1.8.0_252-8u252-b09-1~16.04-b09"/>
+    <property name="user.name" value="jenkins"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="BUILD_TIMESTAMP" value="2020-05-05 08:20:29 UTC"/>
+    <property name="user.language" value="en"/>
+    <property name="JOB_BASE_NAME" value="automation_gs_instance"/>
+    <property name="RUN_CHANGES_DISPLAY_URL" value="http://104.248.6.102:8080/job/automation_gs_instance/76/display/redirect?page=changes"/>
+    <property name="BUILD_DISPLAY_NAME" value="#76"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="GIT_PREVIOUS_SUCCESSFUL_COMMIT" value="94103fdd222b92a1e177abbbd9ee8dfcfba97662"/>
+    <property name="java.version" value="1.8.0_252"/>
+    <property name="user.timezone" value="Etc/UTC"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="NODE_NAME" value="master"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="BUILD_ID" value="76"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="SHELL" value="/bin/bash"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="user.country" value="US"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="os.version" value="4.4.0-177-generic"/>
+    <property name="RUN_DISPLAY_URL" value="http://104.248.6.102:8080/job/automation_gs_instance/76/display/redirect"/>
+    <property name="POM_VERSION" value="0.0.1-SNAPSHOT"/>
+    <property name="sun.font.fontmanager" value="sun.awt.X11FontManager"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.version" value="25.252-b09"/>
+    <property name="GIT_PREVIOUS_COMMIT" value="e89c4e40a6b2a074e32f7a94e32e31df9b75ca96"/>
+    <property name="JOB_DISPLAY_URL" value="http://104.248.6.102:8080/job/automation_gs_instance/display/redirect"/>
+    <property name="SHLVL" value="1"/>
+    <property name="_" value="/usr/bin/daemon"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="JAVA_HOME" value="/usr"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="LOGNAME" value="jenkins"/>
+    <property name="POM_PACKAGING" value="jar"/>
+    <property name="HOME" value="/var/lib/jenkins"/>
+    <property name="POM_GROUPID" value="com.automation"/>
+    <property name="user.home" value="/var/lib/jenkins"/>
+    <property name="BUILD_TAG" value="jenkins-automation_gs_instance-76"/>
+    <property name="JENKINS_SERVER_COOKIE" value="399c0952e66125ec"/>
+    <property name="HUDSON_URL" value="http://104.248.6.102:8080/"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="XDG_SESSION_ID" value="c4"/>
+    <property name="CLASSPATH" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="java.class.path" value="/var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven33-agent-1.13.jar:/usr/share/maven/boot/plexus-classworlds-2.x.jar:/usr/share/maven/conf/logging"/>
+    <property name="sun.java.command" value="jenkins.maven3.agent.Maven33Main /usr/share/maven /var/cache/jenkins/war/WEB-INF/lib/remoting-4.2.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven33-interceptor-1.13.jar /var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar 42215"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PATH+JDK" value="/usr/bin"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="M2_HOME" value="/usr/share/maven"/>
+    <property name="MAIL" value="/var/mail/jenkins"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="HUDSON_HOME" value="/var/lib/jenkins"/>
+    <property name="PATH+MAVEN" value="/usr/share/maven/bin"/>
+    <property name="BUILD_URL" value="http://104.248.6.102:8080/job/automation_gs_instance/76/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="user.dir" value="/var/lib/jenkins/workspace/automation_gs_instance"/>
+    <property name="JOB_URL" value="http://104.248.6.102:8080/job/automation_gs_instance/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="MAVEN_HOME" value="/usr/share/maven"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="BUILD_NUMBER" value="76"/>
+    <property name="JENKINS_URL" value="http://104.248.6.102:8080/"/>
+    <property name="GIT_BRANCH" value="origin/master"/>
+    <property name="PATH+CHROMEDRIVER" value="/var/lib/jenkins/tools/chromedriver"/>
+    <property name="GIT_COMMIT" value="c04eed21cfb2d78168125fbc25e9585dbdbe10d6"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="LANG" value="en_US.UTF-8"/>
+    <property name="maven3.interceptor" value="/var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven33-interceptor-1.13.jar"/>
+    <property name="WORKSPACE_TMP" value="/var/lib/jenkins/workspace/automation_gs_instance@tmp"/>
+    <property name="WORKSPACE" value="/var/lib/jenkins/workspace/automation_gs_instance"/>
+    <property name="maven3.interceptor.common" value="/var/lib/jenkins/plugins/maven-plugin/WEB-INF/lib/maven3-interceptor-commons-1.13.jar"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="USER" value="jenkins"/>
+    <property name="GIT_URL" value="https://github.com/remixlearning/l3-fe-automated-testing.git"/>
+  </properties>
+  <testcase name="signIn" classname="com.automation.signIn.SigninIndex" time="49.38">
+    <failure message="element not interactable&#10;  (Session info: chrome=81.0.4044.92)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;jenkins-automated-testing&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.4.0-177-generic&apos;, java.version: &apos;1.8.0_252&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: /tmp/.com.google.Chrome.9Yo5nC}, goog:chromeOptions: {debuggerAddress: localhost:35673}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: d8a4e3413f491e3dfda1e7b62eb...}&#10;Session ID: d8a4e3413f491e3dfda1e7b62eb03f97" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=81.0.4044.92)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'jenkins-automated-testing', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-177-generic', java.version: '1.8.0_252'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.92, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: /tmp/.com.google.Chrome.9Yo5nC}, goog:chromeOptions: {debuggerAddress: localhost:35673}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: d8a4e3413f491e3dfda1e7b62eb...}
+Session ID: d8a4e3413f491e3dfda1e7b62eb03f97
+	at com.automation.signIn.SigninIndex.signIn(SigninIndex.java:61)
+</failure>
+    <system-out><![CDATA[[TestNG] [WARN] Could not find reporter class : listenReport.Reporter
+[TestNG] [WARN] Ignoring duplicate listener : com.utilities.CustomReporterEmailBuildSummary
+[TestNG] [WARN] Ignoring duplicate listener : com.utilities.CustomReporterforEmail
+[TestNG] [WARN] Ignoring duplicate listener : com.utilities.CustomReporterTestFailureDetails
+[TestNG] [WARN] Ignoring duplicate listener : com.utilities.CustomReporterListener
+...
+... TestNG 6.14.3 by Cédric Beust (cedric@beust.com)
+...
+
+========================================================
+  URL     : https://qa-gold.cityoflearning.me
+  Username: mukeshlearnergold1
+  Password: Kiwi1234
+  Name    : qagold
+========================================================
+========================================================
+  URL     : https://evanston.cityoflearning.me
+  Username: migtest-300
+  Password: test
+  Name    : evanston
+========================================================
+========================================================
+  URL     : https://staging.cityoflearning.org
+  Username: migtest-300
+  Password: test
+  Name    : qagold
+========================================================
+========================================================
+  URL     : https://dallas.cityoflearning.me
+  Username: migtest-300
+  Password: test
+  Name    : dallas
+========================================================
+========================================================
+  URL     : https://san-antonio.cityoflearning.me
+  Username: migtest-300
+  Password: test
+  Name    : san_antonio
+========================================================
+05/05/2020 13:50:45
+05/05/2020 13:50:45
+[https://staging.cityoflearning.org] [QAGold - Stage] - SignIn - SignOut Module [05/05/2020 13:50:45]
+[https://evanston.cityoflearning.me] [QAGold - Stage] - SignIn - SignOut Module [05/05/2020 13:50:45]
+|| {{{{{ ===============>>https://staging.cityoflearning.org
+|| {{{{{ ===============>>https://evanston.cityoflearning.me
+05/05/2020 13:50:45
+[https://san-antonio.cityoflearning.me] [QAGold - Stage] - SignIn - SignOut Module [05/05/2020 13:50:45]
+|| {{{{{ ===============>>https://san-antonio.cityoflearning.me
+05/05/2020 13:50:45
+[https://dallas.cityoflearning.me] [QAGold - Stage] - SignIn - SignOut Module [05/05/2020 13:50:45]
+|| {{{{{ ===============>>https://dallas.cityoflearning.me
+05/05/2020 13:50:45
+[https://qa-gold.cityoflearning.me] [QAGold - Stage] - SignIn - SignOut Module [05/05/2020 13:50:45]
+|| {{{{{ ===============>>https://qa-gold.cityoflearning.me
+:: Run ENV On::remote
+ ### CURRENT EXECUTION O.S -->linux
+:: Run ENV On::remote
+ ### CURRENT EXECUTION O.S -->linux
+:: Run ENV On::remote
+ ### CURRENT EXECUTION O.S -->linux
+:: Run ENV On::remote
+ ### CURRENT EXECUTION O.S -->linux
+:: Run ENV On::remote
+ ### CURRENT EXECUTION O.S -->linux
+********** Test URL ::-https://evanston.cityoflearning.me
+Current Window Handle ID : --->>CDwindow-54D1E86BD035F7229D9EC12148869AD4
+Current Xml Suite is:=========>[QAGold - Stage] - SignIn - SignOut Module
+********** Test URL ::-https://dallas.cityoflearning.me
+Current Window Handle ID : --->>CDwindow-3A563AB1B7E9AD01FF8AD123105B6B67
+Current Xml Suite is:=========>[QAGold - Stage] - SignIn - SignOut Module
+======Abstract Page======
+======Abstract Page======
+======Abstract Page======
+======Abstract Page======
+======Abstract Page======
+======Abstract Page======
+======Abstract Page======
+Seession bf008ac4cba58170a7a1595095ef61c8
+======Abstract Page======
+Seession 7962c6342ba8037cc0f920f46805a040
+TC_SignIn_01 
+TC_SignIn_01 
+ TC_SI_01 :: [Evanstone Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public' user. - [https://evanston.cityoflearning.me]
+ To verify Sign In Functionality.
+Step 1 : Open url: <a>https://evanston.cityoflearning.me</a>
+ TC_SI_01 :: [Dallas Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public' user. - [https://dallas.cityoflearning.me]
+ To verify Sign In Functionality.
+Step 1 : Open url: <a>https://dallas.cityoflearning.me</a>
+********** Test URL ::-https://qa-gold.cityoflearning.me
+Current Window Handle ID : --->>CDwindow-BD012B0B73226F468E7A33AED5F57C90
+Current Xml Suite is:=========>[QAGold - Stage] - SignIn - SignOut Module
+======Abstract Page======
+======Abstract Page======
+======Abstract Page======
+======Abstract Page======
+Seession c34d7329a42862f231cd168c6abfa0c4
+TC_SignIn_01 
+ TC_SI_01 :: [QA Gold] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public User' . - [https://qa-gold.cityoflearning.me]
+ To verify Sign In Functionality.
+Step 1 : Open url: <a>https://qa-gold.cityoflearning.me</a>
+********** Test URL ::-https://san-antonio.cityoflearning.me
+Current Window Handle ID : --->>CDwindow-F759A64CD603FE99703DDA1BCFFEE22F
+Current Xml Suite is:=========>[QAGold - Stage] - SignIn - SignOut Module
+======Abstract Page======
+======Abstract Page======
+======Abstract Page======
+======Abstract Page======
+Seession ca5eeb5cf3fa973e74d49b31a3ac144b
+TC_SignIn_01 
+ TC_SI_01 :: [San Antonio Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public' user. - [https://san-antonio.cityoflearning.me]
+ To verify Sign In Functionality.
+Step 1 : Open url: <a>https://san-antonio.cityoflearning.me</a>
+********** Test URL ::-https://staging.cityoflearning.org
+Current Window Handle ID : --->>CDwindow-CB0F4D24D0C815229B5FA41A6BFB4C8D
+Current Xml Suite is:=========>[QAGold - Stage] - SignIn - SignOut Module
+======Abstract Page======
+======Abstract Page======
+======Abstract Page======
+======Abstract Page======
+Seession d8a4e3413f491e3dfda1e7b62eb03f97
+TC_SignIn_01 
+ TC_SI_01 :: [Chicago Stage] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public' user. - [https://staging.cityoflearning.org]
+ To verify Sign In Functionality.
+Step 1 : Open url: <a>https://staging.cityoflearning.org</a>
+-->   https://evanston.cityoflearning.me/  < --- 
+To verify user redirects to the Home page and can see the all contents on the page with 'JOIN NOW' and 'SignIn' button.
+-->   https://dallas.cityoflearning.me/  < --- 
+To verify user redirects to the Home page and can see the all contents on the page with 'JOIN NOW' and 'SignIn' button.
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Step 2 : 'SignIn' with valid Credentials
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Step 2 : 'SignIn' with valid Credentials
+-->   https://qa-gold.cityoflearning.me/  < --- 
+To verify user redirects to the Home page and can see the all contents on the page with 'JOIN NOW' and 'SignIn' button.
+-->   https://san-antonio.cityoflearning.me/  < --- 
+To verify user redirects to the Home page and can see the all contents on the page with 'JOIN NOW' and 'SignIn' button.
+-->   https://staging.cityoflearning.org/  < --- 
+To verify user redirects to the Home page and can see the all contents on the page with 'JOIN NOW' and 'SignIn' button.
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Step 2 : 'SignIn' with valid Credentials
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Step 2 : 'SignIn' with valid Credentials
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Step 2 : 'SignIn' with valid Credentials
+Clicked on 'LogIn' button.
+Clicked on 'LogIn' button.
+Clicked on 'LogIn' button.
+Clicked on 'LogIn' button.
+Clicked on 'LogIn' button.
+Env is: https://evanston.cityoflearning.me
+======Abstract Page======
+To verify user gets SignIn form for 'username' and 'password' .
+Clicked on 'Sign In' link.
+======Abstract Page======
+To verify user gets SignIn form for 'username' and 'password' .
+======Abstract Page======
+To verify user gets SignIn form for 'username' and 'password' .
+======Abstract Page======
+To verify user gets SignIn form for 'username' and 'password' .
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Environment:  <b>https://qa-gold.cityoflearning.me</b>
+fail
+<br><Strong><font color=#FF0000><b>&#10008 FAIL</b></font></strong></br>
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Environment:  <b>https://san-antonio.cityoflearning.me</b>
+Environment:  <b>https://staging.cityoflearning.org</b>
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Environment:  <b>https://dallas.cityoflearning.me</b>
+Entered 'Username' :-<b>mukeshlearnergold1</b>
+Entered 'Username' :-<b>migtest-300</b>
+Clicked on 'Close' icon from Shared Device Popup.
+======Abstract Page======
+======Abstract Page======
+To verify user gets SignIn form for 'username' and 'password' .
+Entered 'Username' :-<b>migtest-300</b>
+Entered 'Password' :-<b>Kiwi1234</b>
+Entered 'Password' :-<b>test</b>
+Entered 'Password' :-<b>test</b>
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Environment:  <b>https://evanston.cityoflearning.me</b>
+Entered 'Username' :-<b>migtest-300</b>
+Clicked on 'SignIn' button.
+======Abstract Page======
+Clicked on 'SignIn' button.
+======Abstract Page======
+Clicked on 'Log in' button.
+======Abstract Page======
+Entered 'Password' :-<b>test</b>
+Clicked on 'SignIn' button.
+======Abstract Page======
+======Abstract Page======
+To verify user should SignIn successfully and verify user Profile name should be same as username.
+======Abstract Page======
+To verify user should SignIn successfully and verify user Profile name should be same as username.
+======Abstract Page======
+To verify user should SignIn successfully and verify user Profile name should be same as username.
+Actual Username after SignIn: <b>MIGTEST-300</b>
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+To verify user is redirected to 'My Profile' page
+Actual Username after SignIn: <b>MUKESHLEARNERGOLD1</b>
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+To verify user is redirected to 'My Profile' page
+Actual URL after SignIn: https://san-antonio.cityoflearning.me/my-profile
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Step 3 : Open Profile-Menu options. 
+Actual URL after SignIn: https://qa-gold.cityoflearning.me/my-profile
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Step 3 : Open Profile-Menu options. 
+======Abstract Page======
+To verify user should SignIn successfully and verify user Profile name should be same as username.
+Actual Username after SignIn: <b>MIGTEST-300</b>
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+To verify user is redirected to 'My Profile' page
+Actual URL after SignIn: https://dallas.cityoflearning.me/my-profile
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Step 3 : Open Profile-Menu options. 
+Actual Username after SignIn: <b>MIGTEST-300</b>
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+To verify user is redirected to 'My Profile' page
+Actual URL after SignIn: https://evanston.cityoflearning.me/my-profile
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+Step 3 : Open Profile-Menu options. 
+Clicked on 'Profile Menu' icon (From Username).
+Clicked on 'Profile Menu' icon (From Username).
+======Abstract Page======
+To verify Username menu options should be displayed: 'MY PROFILE' - 'VIEW ACCOUNT' - 'SIGN OUT'
+======Abstract Page======
+To verify Username menu options should be displayed: 'MY PROFILE' - 'VIEW ACCOUNT' - 'SIGN OUT'
+Clicked on 'Profile Menu' icon (From Username).
+Total Options in My Profile:3
+Total Options in My Profile:3
+- MY PROFILE
+- MY PROFILE
+- VIEW ACCOUNT
+- VIEW ACCOUNT
+- SIGN OUT
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+TC_SignOut_01 
+ To verify Sign Out Functionality.
+Step 4 : Sign Out from current signin account.
+- SIGN OUT
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+TC_SignOut_01 
+ To verify Sign Out Functionality.
+Step 4 : Sign Out from current signin account.
+======Abstract Page======
+To verify Username menu options should be displayed: 'MY PROFILE' - 'VIEW ACCOUNT' - 'SIGN OUT'
+Clicked on 'Profile Menu' icon (From Username).
+Total Options in My Profile:3
+- MY PROFILE
+- VIEW ACCOUNT
+- SIGN OUT
+pass
+ <Strong><font color=#008000><b> &#10004 PASS</b></font></strong>
+TC_SignOut_01 
+ To verify Sign Out Functionality.
+Step 4 : Sign Out from current signin account.
+]]></system-out>
+    <system-err><![CDATA[May 05, 2020 8:20:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+May 05, 2020 8:20:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+May 05, 2020 8:20:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+May 05, 2020 8:20:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+May 05, 2020 8:20:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+May 05, 2020 8:20:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+May 05, 2020 8:20:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+May 05, 2020 8:20:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+May 05, 2020 8:20:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+May 05, 2020 8:20:45 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+May 05, 2020 8:20:48 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 05, 2020 8:20:48 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 05, 2020 8:20:48 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 05, 2020 8:20:48 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+May 05, 2020 8:20:48 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Seession bf008ac4cba58170a7a1595095ef61c8
+Seession 7962c6342ba8037cc0f920f46805a040
+Seession c34d7329a42862f231cd168c6abfa0c4
+Seession ca5eeb5cf3fa973e74d49b31a3ac144b
+Seession d8a4e3413f491e3dfda1e7b62eb03f97
+]]></system-err>
+  </testcase>
+  <testcase name="signIn" classname="com.automation.signIn.SigninIndex" time="20.227"/>
+  <testcase name="signIn" classname="com.automation.signIn.SigninIndex" time="20.455"/>
+  <testcase name="signIn" classname="com.automation.signIn.SigninIndex" time="24.546"/>
+  <testcase name="signIn" classname="com.automation.signIn.SigninIndex" time="11.357"/>
+  <testcase name="logInAdmin" classname="com.automation.signIn.SigninIndex" time="9.462"/>
+  <testcase name="logInAdmin" classname="com.automation.signIn.SigninIndex" time="20.109"/>
+  <testcase name="logInAdmin" classname="com.automation.signIn.SigninIndex" time="20.283"/>
+  <testcase name="logInAdmin" classname="com.automation.signIn.SigninIndex" time="23.382"/>
+  <testcase name="logInAdmin" classname="com.automation.signIn.SigninIndex" time="39.891"/>
+  <testcase name="signUp" classname="com.automation.signUp.SignUpIndex" time="67.244"/>
+  <testcase name="signUp" classname="com.automation.signUp.SignUpIndex" time="82.979"/>
+  <testcase name="signUp" classname="com.automation.signUp.SignUpIndex" time="83.856"/>
+  <testcase name="signUp" classname="com.automation.signUp.SignUpIndex" time="85.153"/>
+  <testcase name="signUp" classname="com.automation.signUp.SignUpIndex" time="87.305"/>
+</testsuite>

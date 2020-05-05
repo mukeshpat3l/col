@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>TestNG:   TC_SU_01 :: [Dallas Stage] To verify 'SignUp' functionality for 'Learner user Above 13' age.</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'> TC_SU_01 :: [Dallas Stage] To verify 'SignUp' functionality for 'Learner user Above 13' age.</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 05 08:23:42 UTC 2020</td>
+</tr>
+<tr><td>Total time:</td><td>93 seconds (93937 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.signUp.SignUpIndex.signUp()'><b>signUp</b><br>Test class: com.automation.signUp.SignUpIndex<br/>
+<a href="#Output-2109555754" onClick='toggleBox("Output-2109555754", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2109555754" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2109555754">
+<strong> <h4 style="color:DarkViolet"> Test Case ID: TC_SignUp_01</h4> </strong><br/>
+<strong> <h3 style="color:DeepPink"> Test Description:  TC_SU_01 :: [Dallas Stage] To verify 'SignUp' functionality for 'Learner user Above 13' age. - [https://dallas.cityoflearning.me]</h4> </strong><br/>
+<strong> <h4 style="color:DeepPink"> Testcase :  To verify SignUp Functionality (Create New Account Successfully).</h4> </strong><br/>
+<br></br>Step 1 : Open url: <a>https://dallas.cityoflearning.me</a><br/>
+<br></br><b style="color:OrangeRed "> Expected Result-1: </b><b>To verify user redirects to the Home page and can see the all contents on the page with 'JOIN NOW' and 'SignIn' button.</b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br>Step 2 : 'SignUp' (Create New Account) with valid Credentials<br/>
+<br></br>Step 3 : Open 'SignUp' form.<br/>
+<br></br>Clicked on 'Join' button.<br/>
+<br></br><b style="color:OrangeRed "> Expected Result-2: </b><b>To verify user gets SignUp form with 'First Name', 'Last Name' and 'Birthday'.</b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br>Environment:  <b>https://dallas.cityoflearning.me</b><br/>
+<br></br>Step 4 : Enter valid 'SignUp' details.<br/>
+<br></br>Entered 'First Name' :-<b>qVJCC_automation</b><br/>
+<br></br>Entered 'Last Name' :-<b>RvSUB_automation</b><br/>
+<br></br>Selected 'Month' :-<b>January</b><br/>
+<br></br>Selected 'Date' :-<b>28</b><br/>
+<br></br>Selected 'Year' :-<b>2005</b><br/>
+<br></br>Clicked on 'Continue to Sign Up'.<br/>
+<br></br><b style="color:OrangeRed "> Expected Result-3: </b><b>To verify user should be redirected to Select School page.</b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br>Step 5 : Select School for this user. (If School selection feature is enable.)<br/>
+<br></br>Selected school: SUNSET HIGH SCHOOL, DALLAS ISD<br/>
+<br></br>Clicked on 'You're almost there!'.<br/>
+<br></br><b style="color:OrangeRed "> Expected Result-4: </b><b>To verify user should be redirected to enter email, username and password page.</b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br>Step 6 : Enter valid Credentials (Email, Username, Password)<br/>
+<br></br>Entered email: tarpan.patel+19091dallas@kiwiqa.com<br/>
+<br></br>Entered username: 19091dallas<br/>
+<br></br>Entered password: Kiwi1234auto<br/>
+<br></br>Clicked on 'Agree & Create Account'.<br/>
+<br></br>Clicked on 'Let's Start With...'.<br/>
+<br></br>Closed pop-up.<br/>
+<br></br><b style="color:OrangeRed "> Expected Result-5: </b><b>To verify user is redirected to 'My Profile' page and verify 'username' is same as entered.</b><br/>
+<br></br>Actual Page Title after SignUp: <b>My Profile</b><br/>
+<br></br>Actual Username after SignUp: <b>19091DALLAS</b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br><b style="color:OrangeRed "> Expected Result-6: </b><b>To verify entered FirstName ,Last name and Email should be same as entered during SignUp</b><br/>
+<br></br>Actual Full Name: <b>qVJCC_automation RvSUB_automation</b><br/>
+<br></br>Actual Email: <b>tarpan.patel+19091dallas@kiwiqa.com</b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br>Step 7Open Edit My Info for more verification<br/>
+<br></br><b style="color:OrangeRed "> Expected Result-7: </b><b>To verify entered DOB should be same as entered during SignUp</b><br/>
+<br></br>Actual DOB: <b>01/28/2005</b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<hr size='4px' noshade color='green'><br/>
+</div>
+</td>
+<td></td>
+<td>84</td>
+<td>com.automation.signUp.SignUpIndex@371a67ec</td></tr>
+</table><p>
+</body>
+</html>

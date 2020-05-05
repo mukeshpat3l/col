@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>TestNG:   TC_SI_01 :: [QA Gold] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public User' .</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'> TC_SI_01 :: [QA Gold] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public User' .</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue May 05 08:20:45 UTC 2020</td>
+</tr>
+<tr><td>Total time:</td><td>84 seconds (84961 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.signIn.SigninIndex.signIn()'><b>signIn</b><br>Test class: com.automation.signIn.SigninIndex<br/>
+<a href="#Output-1275607268" onClick='toggleBox("Output-1275607268", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1275607268" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1275607268">
+<strong> <h4 style="color:DarkViolet"> Test Case ID: TC_SignIn_01 </h4> </strong><br/>
+<strong> <h3 style="color:DeepPink"> Test Description:  TC_SI_01 :: [QA Gold] To verify 'SignIn' functionality and To verify 'SignOut' functionaity for 'Public User' . - [https://qa-gold.cityoflearning.me]</h4> </strong><br/>
+<strong> <h4 style="color:DeepPink"> Testcase :  To verify Sign In Functionality.</h4> </strong><br/>
+<br></br>Step 1 : Open url: <a>https://qa-gold.cityoflearning.me</a><br/>
+<br></br><b style="color:OrangeRed "> Expected Result-1: </b><b>To verify user redirects to the Home page and can see the all contents on the page with 'JOIN NOW' and 'SignIn' button.</b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br>Step 2 : 'SignIn' with valid Credentials<br/>
+<br></br>Clicked on 'LogIn' button.<br/>
+<br></br><b style="color:OrangeRed "> Expected Result-2: </b><b>To verify user gets SignIn form for 'username' and 'password' .</b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br>Environment:  <b>https://qa-gold.cityoflearning.me</b><br/>
+<br></br>Entered 'Username' :-<b>mukeshlearnergold1</b><br/>
+<br></br>Entered 'Password' :-<b>Kiwi1234</b><br/>
+<br></br>Clicked on 'SignIn' button.<br/>
+<br></br><b style="color:OrangeRed "> Expected Result-3: </b><b>To verify user should SignIn successfully and verify user Profile name should be same as username.</b><br/>
+<br></br>Actual Username after SignIn: <b>MUKESHLEARNERGOLD1</b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br><b style="color:OrangeRed "> Expected Result-4: </b><b>To verify user is redirected to 'My Profile' page</b><br/>
+<br></br>Actual URL after SignIn: https://qa-gold.cityoflearning.me/my-profile<br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br>Step 3 : Open Profile-Menu options. <br/>
+<br></br>Clicked on 'Profile Menu' icon (From Username).<br/>
+<br></br><b style="color:OrangeRed "> Expected Result-5: </b><b>To verify Username menu options should be displayed: 'MY PROFILE' - 'VIEW ACCOUNT' - 'SIGN OUT'</b><br/>
+<br></br>Total Options in My Profile:3<br/>
+<br></br>- MY PROFILE<br/>
+<br></br>- VIEW ACCOUNT<br/>
+<br></br>- SIGN OUT<br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<strong> <h4 style="color:DarkViolet"> Test Case ID: TC_SignOut_01 </h4> </strong><br/>
+<strong> <h4 style="color:DeepPink"> Testcase :  To verify Sign Out Functionality.</h4> </strong><br/>
+<br></br>Step 4 : Sign Out from current signin account.<br/>
+<br></br>Clicked on 'Sign Out' option (From Username menu).<br/>
+<br></br><b style="color:OrangeRed "> Expected Result-6: </b><b>To verify user should get the 'Is this shared device' PopUp model.</b><br/>
+<br></br>Popup is displayed successfully.<br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br><b style="color:OrangeRed "> Expected Result-7: </b><b>To verify user gets SignIn form for 'username' and 'password' after SignOut completely.</b><br/>
+<br></br>Current URL After Sign Out:  <b>https://qa-gold.cityoflearning.me/sign-in</b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<br></br><b style="color:OrangeRed "> Expected Result-8: </b><b>To verify after SignOut user cannot go back to Profile page (via url hit).</b><br/>
+<br></br>Trying to Open URL: <b>https://qa-gold.cityoflearning.me/my-profile</b><br/>
+<br></br><b> System Redirects User to :: https://qa-gold.cityoflearning.me/sign-in- As User is already SignOut. </b><br/>
+<br></br> <Strong><font color=#008000><b> &#10004 PASS</b></font></strong><br/>
+<hr size='4px' noshade color='green'><br/>
+</div>
+</td>
+<td></td>
+<td>72</td>
+<td>com.automation.signIn.SigninIndex@2833cc44</td></tr>
+</table><p>
+</body>
+</html>

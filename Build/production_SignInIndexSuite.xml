@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Production - SignIn - SignOut Module" verbose="10" parallel="tests" thread-count="5">
+
+	<!-- Put IP of localhost/Grid Hub machine -->
+	<parameter name="selenium.host" value="localhost" />
+
+	<!-- Put Port of localhost RC/Grid Hub machine -->
+	<parameter name="selenium.port" value="4444" />
+
+	<!-- Put target browser name as below: 1) Firefox : firefox 2) chrome : chrome 3) IExplorer : ie8 / ie9 ; browserstack -->
+
+	<parameter name="selenium.browser" value="chrome" />
+	<parameter name="execution.env" value="remote" />      <!--  local = execute on localhost else on Remote url-->
+
+	<listeners>
+        <listener class-name="com.utilities.CustomReporterEmailBuildSummary"/>
+        <listener class-name="com.utilities.CustomReporterforEmail"/>
+        <listener class-name="com.utilities.CustomReporterTestFailureDetails"/>
+        <listener class-name="com.utilities.CustomReporterListener"/>
+    </listeners>
+
+	 <test name=" TC_SI_01 :: [Dallas Prod] Public User - To verify 'SignIn' functionality and To verify 'SignOut' functionaity .">
+	 
+	 	<parameter name="test.url" value="https://dallascityoflearning.org" />   	<!-- url will be changed as per different instances -->
+		<parameter name="username" value="qa_tester_under13" />						<!-- username -->
+		<parameter name="password" value="kiwiqa" />								<!-- password -->
+		<parameter name="envName" value="dallas" />                              	<!-- Instance Name -->
+	 
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="signIn" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name=" TC_SI_01 :: [Evanston Prod] Public User - To verify 'SignIn' functionality and To verify 'SignOut' functionaity .">
+		
+		<parameter name="test.url" value="https://el-3.org" />   					<!-- url will be changed as per different instances -->
+		<parameter name="username" value="qa_tester_under13" />						<!-- username -->
+		<parameter name="password" value="kiwiqa" />								<!-- password -->
+		<parameter name="envName" value="evanston" />                              	<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="signIn" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name=" TC_SI_01 :: [Steamville Prod] Public User - To verify 'SignIn' functionality and To verify 'SignOut' functionaity .">
+		
+		<parameter name="test.url" value="https://steamville.org" />   			<!-- url will be changed as per different instances -->
+		<parameter name="username" value="mukeshlearner1" />					<!-- username -->
+		<parameter name="password" value="Kiwi1234" />							<!-- password -->
+		<parameter name="envName" value="steamville" />                           <!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="signIn" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name=" TC_SI_01 :: [MCMF Prod] Public User - To verify 'SignIn' functionality and To verify 'SignOut' functionaity .">
+		
+		<parameter name="test.url" value="https://mychimyfuture.org" />   		<!-- url will be changed as per different instances -->
+		<parameter name="username" value="mukeshlearner1" />					<!-- username -->
+		<parameter name="password" value="Kiwi1234" />							<!-- password -->
+		<parameter name="envName" value="mcmf" />                           	<!-- Instance Name -->
+		
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="signIn" />
+				</methods>
+			</class>
+		</classes>
+	</test> 
+	
+	<test name=" TC_SI_01 :: [San Antonio  Prod] Public User - To verify 'SignIn' functionality and To verify 'SignOut' functionaity .">
+	
+		<parameter name="test.url" value="https://futurereadysa.org" />   		<!-- url will be changed as per different instances -->
+		<parameter name="username" value="qa_tester_under13" />					<!-- username -->
+		<parameter name="password" value="kiwiqa" />							<!-- password -->
+		<parameter name="envName" value="san_antonio" />                        <!-- Instance Name -->
+	
+		<classes>
+			<class name="com.automation.signIn.SigninIndex">
+				<methods>
+					<include name="signIn" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+</suite>
